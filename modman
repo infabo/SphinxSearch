@@ -1,3 +1,3 @@
 src/app/code/community/Manticorp/SphinxSearch app/code/community/Manticorp/SphinxSearch
 src/app/etc/modules/Manticorp_SphinxSearch.xml app/etc/modules/Manticorp_SphinxSearch.xml
-src/lib/sphinxql lib/sphinxql
+src/lib/sphinxapi.php lib/sphinxapi.php
