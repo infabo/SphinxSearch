@@ -35,7 +35,7 @@ class Manticorp_SphinxSearch_Model_Resource_Fulltext_Engine extends Mage_Catalog
             }
 
             if ($data) {
-                    $adapter->insertOnDuplicate('i8ob_sphinx_catalogsearch_fulltext', $data, array('data_index', 'name', 'name_attributes', 'category', 'sku'));
+                    $adapter->insertOnDuplicate('sphinx_catalogsearch_fulltext', $data, array('data_index', 'name', 'name_attributes', 'category', 'sku'));
             }
 
             return $this;
@@ -60,7 +60,7 @@ class Manticorp_SphinxSearch_Model_Resource_Fulltext_Engine extends Mage_Catalog
             $where[] = $this->_getWriteAdapter()->quoteInto('product_id IN(?)', $entityId);
         }
 
-        $this->_getWriteAdapter()->delete('i8ob_sphinx_catalogsearch_fulltext', join(' AND ', $where));
+        $this->_getWriteAdapter()->delete('sphinx_catalogsearch_fulltext', join(' AND ', $where));
 
         return $this;
     }
